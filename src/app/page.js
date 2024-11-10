@@ -1,95 +1,82 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// src/app/page.js
+"use client";
+
+import { useState, useEffect } from 'react';
+import styles from './page.module.css';
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  // Array con las rutas de las imágenes
+  const images = [
+    '/images/alan-01.jpg',
+    '/images/alan-03.jpg',
+    '/images/cable-analog-05.jpg',
+    '/images/cami-analogicas-01.jpg',
+    '/images/cami-analogicas-03.jpg',
+    '/images/cami-analogicas-04.jpg',
+    '/images/cami-analogicas-06.jpg',
+    '/images/cami-analogicas-15.jpg',
+    '/images/isa-01.jpg',
+    '/images/vic-02.jpg',
+    '/images/vic-03.jpg',
+    '/images/vic-04.jpg',
+    '/images/vic-06.jpg',
+    '/images/purefioroni-02.jpg',
+    '/images/purefioroni-03.jpg',
+    '/images/purefioroni-04.jpg',
+    '/images/purefioroni-07.jpg',
+    '/images/purefioroni-11.jpg',
+    '/images/purefioroni-13.jpg',
+    '/images/Hele-01.jpg',
+    '/images/xxx-01.jpg',
+    '/images/variete-1.jpg',
+    '/images/variete-2.jpg',
+    '/images/variete-3.jpg',
+    '/images/variete-4.jpg',
+    '/images/variete-5.jpg',
+    '/images/variete-6.jpg',
+    '/images/variete-7.jpg',
+    '/images/variete-8.jpg',
+  ];
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => {
+        return (prevIndex + 1) % images.length;
+      });
+    }, 500); 
+  
+    return () => clearInterval(interval); 
+  }, [images.length]);
+  
+  
+  
+  return (
+    <div className={styles.container}>
+      {}
+      <div className={styles.imageContainer}>
+        <img
+          src={images[currentImageIndex]}
+          alt="Imagen del carrusel"
+          width={800} 
+          height={1000} 
+          className={styles.carouselImage}
+        />
+      </div>
+
+      {/* Contenedor derecho (texto de bienvenida) */}
+      <div className={styles.rightContainer}>
+        <nav className={styles.nav}>
+          <a href="/gallery">Gallery</a>
+          <a href="/shop">Shop</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div className={styles.welcomeText}>
+          <p>Hola, soy</p>
+          <h1>Rodrigo Guzzanti</h1>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
