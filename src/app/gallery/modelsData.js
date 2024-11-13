@@ -1,0 +1,121 @@
+// src/app/gallery/modelsData.js
+
+export const models = [
+    {
+      name:"purefioroni",
+      instagram: "@purefioroni",
+      instagramLink: "https://www.instagram.com/purefioroni/",
+      photos: [
+        "/images/gallery/purefioroni/purefioroni-01.webp",
+        "/images/gallery/purefioroni/purefioroni-02.webp",
+        "/images/gallery/purefioroni/purefioroni-03.webp",
+        "/images/gallery/purefioroni/purefioroni-04.webp",
+        "/images/gallery/purefioroni/purefioroni-05.webp",
+        "/images/gallery/purefioroni/purefioroni-06.webp",
+        "/images/gallery/purefioroni/purefioroni-07.webp",
+        "/images/gallery/purefioroni/purefioroni-08.webp",
+        "/images/gallery/purefioroni/purefioroni-09.webp",
+        "/images/gallery/purefioroni/purefioroni-10.webp",
+        "/images/gallery/purefioroni/purefioroni-11.webp",
+        "/images/gallery/purefioroni/purefioroni-13.webp",
+        "/images/gallery/purefioroni/purefioroni-14.webp",
+        "/images/gallery/purefioroni/purefioroni-15.webp",
+      ],
+    },
+    {
+      name: "alanjara",
+      instagram: "@alanjara",
+      instagramLink: "https://www.instagram.com/alanjara",
+      photos: [
+        "/images/gallery/alanjara/alan-01.webp",
+        "/images/gallery/alanjara/alan-02.webp",
+        "/images/gallery/alanjara/alan-03.webp",
+        "/images/gallery/alanjara/alan-04.webp",
+        "/images/gallery/alanjara/alan-05.webp",
+        "/images/gallery/alanjara/alan-06.webp",
+        "/images/gallery/alanjara/alan-07.webp",
+        "/images/gallery/alanjara/alan-08.webp",
+      ],
+    },
+
+    {
+      name: "camisimo__",
+      instagram: "@camisimo__",
+      instagramLink: "https://www.instagram.com/camisimo__",
+      photos: [
+        "/images/gallery/camisimo__/cami-analogicas-01.webp",
+        "/images/gallery/camisimo__/cami-analogicas-02.webp",
+        "/images/gallery/camisimo__/cami-analogicas-03.webp",
+        "/images/gallery/camisimo__/cami-analogicas-04.webp",
+        "/images/gallery/camisimo__/cami-analogicas-05.webp",
+        "/images/gallery/camisimo__/cami-analogicas-06.webp",
+        "/images/gallery/camisimo__/cami-analogicas-07.webp",
+        "/images/gallery/camisimo__/cami-analogicas-08.webp",
+        "/images/gallery/camisimo__/cami-analogicas-09.webp",
+        "/images/gallery/camisimo__/cami-analogicas-10.webp",
+        "/images/gallery/camisimo__/cami-analogicas-11.webp",
+        "/images/gallery/camisimo__/cami-analogicas-12.webp",
+        "/images/gallery/camisimo__/cami-analogicas-13.webp",
+      ],
+    },
+
+    {
+      name: "juanagranatti_",
+      instagram: "@juanagranatti_",
+      instagramLink: "https://www.instagram.com/juanagranatti_",
+      photos: [
+        "/images/gallery/juanagranatti_/juan-01.webp",
+        "/images/gallery/juanagranatti_/juan-02.webp",
+        "/images/gallery/juanagranatti_/juan-03.webp",
+        "/images/gallery/juanagranatti_/juan-04.webp",
+        "/images/gallery/juanagranatti_/juan-05.webp",
+        "/images/gallery/juanagranatti_/juan-06.webp",
+        "/images/gallery/juanagranatti_/juan-07.webp",
+        "/images/gallery/juanagranatti_/juan-08.webp",
+        "/images/gallery/juanagranatti_/juan-09.webp",
+        "/images/gallery/juanagranatti_/juan-10.webp",
+        "/images/gallery/juanagranatti_/juan-11.webp",
+        "/images/gallery/juanagranatti_/juan-12.webp",
+        "/images/gallery/juanagranatti_/juan-13.webp",
+      ],
+    },
+
+
+    {
+      name: "victoriacart_",
+      instagram: "@victoriacart_",
+      instagramLink: "https://www.instagram.com/victoriacart_",
+      photos: [
+        "/images/gallery/victoriacart_/vic-06.webp",
+        "/images/gallery/victoriacart_/vic-01.webp",
+        "/images/gallery/victoriacart_/vic-02.webp",
+        "/images/gallery/victoriacart_/vic-03.webp",
+        "/images/gallery/victoriacart_/vic-04.webp",
+        "/images/gallery/victoriacart_/vic-05.webp",
+        "/images/gallery/victoriacart_/vic-07.webp",
+        "/images/gallery/victoriacart_/vic-08.webp",
+        "/images/gallery/victoriacart_/vic-09.webp",
+      ],
+    },
+
+    {
+      name: "morarenillas",
+      instagram: "@morarenillas",
+      instagramLink: "https://www.instagram.com/morarenillas",
+      photos: [
+        "/images/gallery/morarenillas/morarenillas-05.webp",
+        "/images/gallery/morarenillas/morarenillas-10.webp",
+        "/images/gallery/morarenillas/morarenillas-11.webp",
+        "/images/gallery/morarenillas/morarenillas-09.webp",
+        "/images/gallery/morarenillas/morarenillas-01.webp",
+        "/images/gallery/morarenillas/morarenillas-02.webp",
+        "/images/gallery/morarenillas/morarenillas-03.webp",
+        "/images/gallery/morarenillas/morarenillas-04.webp",
+        "/images/gallery/morarenillas/morarenillas-06.webp",
+        "/images/gallery/morarenillas/morarenillas-07.webp",
+        "/images/gallery/morarenillas/morarenillas-08.webp",
+      ],
+    },
+
+  ];
+  

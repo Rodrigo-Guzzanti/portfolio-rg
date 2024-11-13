@@ -1,0 +1,42 @@
+/* src/app/gallery/gallery.module.css */
+
+.galleryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .modelSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .modelInstagram {
+    font-size: 1.2rem;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .modelInstagram:hover {
+    text-decoration: underline;
+  }
+  
+  .carouselContainer {
+    display: flex;
+    overflow-x: auto; /* Permite desplazarse horizontalmente si hay muchas fotos */
+  }
+  
+  .carouselImage {
+    width: 200px; /* Ajusta el tamaño según lo que necesites */
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .carouselImage:hover {
+    transform: scale(1.07); /* Efecto de zoom en hover */
+  }
+  
